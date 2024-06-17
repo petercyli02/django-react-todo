@@ -20,7 +20,7 @@ from rest_framework import routers
 from todo import views
 
 router = routers.DefaultRouter()
-router.register(r'todos', views.ToDoView, 'todo')
+router.register(r'todo', views.ToDoView, 'todo')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
